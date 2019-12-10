@@ -38,7 +38,7 @@ public class MailsAdapter extends RecyclerView.Adapter<MailsAdapter.MailsViewHol
         holder.tvname.setText(mails.getName());
         holder.tvtitle.setText(mails.getTitle());
         holder.tvtime.setText(mails.getTime());
-        holder.Rat.setNumStars(mails.getRat());
+
     }
 
     @Override
@@ -49,7 +49,6 @@ public class MailsAdapter extends RecyclerView.Adapter<MailsAdapter.MailsViewHol
     public class MailsViewHolder extends RecyclerView.ViewHolder{
         CircleImageView crcimg;
         TextView tvname,tvtitle,tvdesc,tvtime;
-        RatingBar Rat;
         public MailsViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -58,7 +57,6 @@ public class MailsAdapter extends RecyclerView.Adapter<MailsAdapter.MailsViewHol
             tvtitle = itemView.findViewById(R.id.tvTitle);
             tvdesc = itemView.findViewById(R.id.tvDes);
             tvtime = itemView.findViewById(R.id.tvTime);
-            Rat = itemView.findViewById(R.id.rat);
         }
     }
 }

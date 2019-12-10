@@ -3,9 +3,7 @@ package com.abiraj.mymail;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
 
         List<Mails> mailsList = new ArrayList<>();
-        mailsList.add(new Mails("Sam","Weekend Adventure","lets go fishing with john and others.We wil...","10:42am",R.drawable.s));
-        mailsList.add(new Mails("Facebook","James you have new notifaction","A lot has happened in facbook since..","16:00pm",R.drawable.f));
-        mailsList.add(new Mails("Google+","Top Sugested Google+ pages for you ","Top Sugested Google+ pages for you","18:44pm",R.drawable.g));
-        mailsList.add(new Mails("Twitter","Follow T-mobile,Samsung Mobile U","James some people you may know",":00pm",R.drawable.t));
-        mailsList.add(new Mails("Pinterest","Pins you'll love!","Have you seen this pins yet?Pinterest","09:04pm",R.drawable.p));
+        mailsList.add(new Mails("Sam","jdshfkjdshf","jksdfsdf","10:45",R.drawable.s));
+        mailsList.add(new Mails("Facebook","you have one notifacrion","open it","10:45",R.drawable.f));
+        mailsList.add(new Mails("Google","top suggested","top suggested google+","11:06",R.drawable.g));
+        mailsList.add(new Mails("Twitter","you have one twit","one twit","02:04",R.drawable.t));
+        mailsList.add(new Mails("Pinterest","pins you'll love","have you seen this pins yet?","03:04",R.drawable.p));
         mailsList.add(new Mails("Josh","Going Lunch","Nearby hotels for you","01:04pm",R.drawable.j));
 
         MailsAdapter mailsAdapter = new MailsAdapter(this,mailsList);

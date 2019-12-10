@@ -7,15 +7,14 @@ public class Mails {
     private String desc;
     private int imageID;
     private String time;
-    private int rat;
 
-    public Mails(String name,String title,String desc,String time,int rat,int imageID){
+
+    public Mails(String name,String title,String desc,String time,int imageID){
 
         this.name = name;
         this.title = title;
         this.desc = desc;
         this.time = time;
-        this.rat = rat;
         this.imageID = imageID;
     }
 
@@ -59,11 +58,5 @@ public class Mails {
         this.time = time;
     }
 
-    public int getRat() {
-        return rat;
-    }
 
-    public void setRat(int rat) {
-        this.rat = rat;
-    }
 }
